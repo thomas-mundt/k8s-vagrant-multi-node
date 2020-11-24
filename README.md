@@ -1,5 +1,16 @@
 # k8s-vagrant-multi-node
 
+
+```
+git clone https://github.com/galexrt/k8s-vagrant-multi-node.git
+cd k8s-vagrant-multi-node/
+NODE_MEMORY_SIZE_GB=3 NODE_CPUS=2 NODE_COUNT=3 make up -j4
+kubectl get nodes
+make status
+```
+
+
+
 [![Build Status](https://travis-ci.org/galexrt/k8s-vagrant-multi-node.svg?branch=master)](https://travis-ci.org/galexrt/k8s-vagrant-multi-node)
 
 This project was based on work from [coolsvap/kubeadm-vagrant](https://github.com/coolsvap/kubeadm-vagrant) by [@coolsvap](https://twitter.com/coolsvap), now it is mostly independent.
